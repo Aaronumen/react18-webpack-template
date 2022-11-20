@@ -1,0 +1,17 @@
+body {
+  background-color: gray;
+  background-color: #f1f1f1;
+
+  p {
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 300px;
+    color: red;
+    background-color: red;
+  }
+
+  #app {
+    height: 100%;
+    width: 100%;
+  }
+}

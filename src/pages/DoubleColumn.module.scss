@@ -1,0 +1,38 @@
+/*
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .left {
+    height: 100%;
+    width: 100px;
+    background-color: $color;
+    float: left;
+  }
+
+  .right {
+    background-color: aqua;
+    height: 100%;
+    margin-left: 100px;
+  }
+}*/
+
+//flex布局实现两栏
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  .left {
+    height: 100%;
+    width: 100px;
+    background-color: $color;
+  }
+
+  .right {
+    background-color: aqua;
+    height: 100%;
+    flex: 1;
+  }
+}

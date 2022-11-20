@@ -1,0 +1,15 @@
+.text {
+  width: 60px;
+  height: 90px;
+  //单行文本省略
+  /*overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;*/
+  //多行文本省略
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

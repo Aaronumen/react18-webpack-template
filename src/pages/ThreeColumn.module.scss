@@ -1,0 +1,64 @@
+//position实现三栏，两边使用absolute中间使用margin或者padding都可
+/*
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0 200px 0 100px;
+
+  .left {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+  }
+
+  .center {
+    height: 100%;
+    background-color: $color;
+  }
+
+  .right {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: aqua;
+  }
+}*/
+//用margin负值实现圣杯布局
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0 200px 0 100px;
+
+  .left {
+    width: 100px;
+    height: 100%;
+    margin-left: calc(-100% - 100px);
+    float: left;
+    background-color: blue;
+    //position: relative;
+    //left: -100px;
+  }
+
+  .center {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: $color;
+  }
+
+  .right {
+    height: 100%;
+    float: left;
+    margin-right: -200px;
+    width: 200px;
+    background-color: aqua;
+  }
+}
+
+//双飞翼布局多一层dom,center-warp包裹center,然后三个浮动,给center设置margin撑开左右两边，center-warp设置百分比宽度，left margin-left:100%直接靠住最左边

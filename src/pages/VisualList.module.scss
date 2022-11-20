@@ -1,0 +1,31 @@
+.infiniteListContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warp {
+  height: 500px;
+  overflow: auto;
+  position: absolute;
+  will-change: 'transform';
+}
+
+.infiniteList {
+  height: 5000px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.infinite-list-item {
+  padding: 10px;
+  color: #555;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999;
+}
+
+.item {
+  height: 20px;
+  background-color: bisque;
+}
